@@ -203,6 +203,9 @@ main {
     font-weight: 100;
 }
 
+.dots {
+    cursor: pointer;
+}
 footer div{
     font-family: var(--all-font);
     font-size: 15px;
