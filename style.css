@@ -127,6 +127,7 @@ main {
     font-family: var(--all-font);
     color: #777bbb;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .nav__btn:hover {
@@ -201,6 +202,90 @@ main {
     font-weight: 100;
 }
 
-.active-link {
-    color: white;
+/* ================================= Media Queries Breakpoints =========================== */
+
+@media screen and (max-width: 800px) {
+    .profile__img-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile__img {
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 255px 1fr;
+        column-gap: 1.9rem;
+        margin-inline: 12rem;
+    }
+
+    .profile__container {
+        /* height: 100%; */
+        margin-bottom: 4.9rem;
+    }
+
+    .profile__info {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2rem;
+    }
+
+    .profile__img-container {
+        height: 84px;
+        width: 84px;
+    }
+
+    .profile__img {
+        width: 78px;
+    }
+
+    .profile__report {
+        font-size: 15px;
+    }
+
+    .profile__name {
+        font-size: 40px;
+    }
+
+    .nav__buttons {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .label {
+        font-size: 18px;
+    }
+
+    .cards__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.85rem;
+        row-gap: 1.85rem;
+        margin-bottom: 5rem;
+    }
+
+    .card__numbers {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card__hours {
+        font-size: 48px;
+        margin-bottom: 1rem;
+    }
+
+    .card__last {
+        font-size: 14px;
+    }
+
+    .card__content {
+        padding: 1.5rem;
+    }
+
+    .data__card {
+        width: 190px;
+    }
 }
